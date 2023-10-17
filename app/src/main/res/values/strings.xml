@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">FeelNote</string>
+
+    <string name="title_note_1">Note 1</string>
+    <string name="title_note_2">Note 2</string>
+    <string name="title_note_3">Note 3</string>
+    <string name="title_note_4">Note 4</string>
+    <string name="title_note_5">Note 5</string>
+
+    <string name="description_note_1">Description Note 1 lorem ipsum dolores ododkfkd</string>
+    <string name="description_note_2">Description Note 2</string>
+    <string name="description_note_3">Description Note 3</string>
+    <string name="description_note_4">Description Note 4</string>
+    <string name="description_note_5">Description Note 5</string>
+</resources>
