@@ -6,10 +6,24 @@
     <string name="title_note_3">Note 3</string>
     <string name="title_note_4">Note 4</string>
     <string name="title_note_5">Note 5</string>
+    <string name="title_note_6">Note 6</string>
+    <string name="title_note_7">Note 7</string>
+    <string name="title_note_8">Note 8</string>
+    <string name="title_note_9">Note 9</string>
+    <string name="title_note_10">Note 10</string>
+    <string name="title_note_11">Note 11</string>
+    <string name="title_note_12">Note 12</string>
 
     <string name="description_note_1">Description Note 1 lorem ipsum dolores ododkfkd</string>
     <string name="description_note_2">Description Note 2</string>
     <string name="description_note_3">Description Note 3</string>
     <string name="description_note_4">Description Note 4</string>
     <string name="description_note_5">Description Note 5</string>
+    <string name="description_note_6">Description Note 6</string>
+    <string name="description_note_7">Description Note 7</string>
+    <string name="description_note_8">Description Note 8</string>
+    <string name="description_note_9">Description Note 9</string>
+    <string name="description_note_10">Description Note 10</string>
+    <string name="description_note_11">Description Note 11</string>
+    <string name="description_note_12">Description Note 12</string>
 </resources>

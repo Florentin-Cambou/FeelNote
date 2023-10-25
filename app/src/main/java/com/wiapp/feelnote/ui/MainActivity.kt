@@ -6,12 +6,10 @@ import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
+import com.wiapp.feelnote.navigation.Navigation
+import com.wiapp.feelnote.ui.noteListScreen.ButtonAddNote
 import com.wiapp.feelnote.ui.noteListScreen.LazyVerticalGrid
-import com.wiapp.feelnote.ui.noteListScreen.NoteListScreen
 import com.wiapp.feelnote.ui.theme.FeelNoteTheme
 
 class MainActivity : ComponentActivity() {
@@ -24,7 +22,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    LazyVerticalGrid()
+                    Navigation()
                 }
             }
         }
