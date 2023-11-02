@@ -27,7 +27,10 @@ import com.wiapp.feelnote.model.Note
 fun ItemNote(notes: Note, onElementClick: (String,String) -> Unit) {
     val test = stringResource(id = notes.title)
     val test2 = stringResource(id = notes.description)
-    Column(Modifier.fillMaxSize()) {
+    Column(
+        Modifier
+            .fillMaxSize()
+    ) {
         Card(
             modifier = Modifier
                 .height(95.dp)

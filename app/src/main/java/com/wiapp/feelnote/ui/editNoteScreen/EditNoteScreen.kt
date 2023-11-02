@@ -1,4 +1,6 @@
-package com.wiapp.feelnote.ui.addNoteScreen
+package com.wiapp.feelnote.ui.editNoteScreen
+
+import com.wiapp.feelnote.ui.button.ButtonValidNote
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -9,15 +11,15 @@ import androidx.compose.material3.Divider
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Surface
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.wiapp.feelnote.ui.button.ButtonValidNote
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun AddNoteScreen() {
+fun EditNoteScreen(noteTitle: String? = "Titre Vide", noteDescription: String? =  "Test Description") {
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -28,9 +30,9 @@ fun AddNoteScreen() {
         Box(
             contentAlignment = Alignment.Center
         ) {
-            OutlinedTextField(
-                value = "Note Titre", onValueChange = {}
-            )
+            if (noteTitle != null) {
+                OutlinedTextField(value = noteTitle , onValueChange = {})
+            }
         }
 
         Divider(modifier = Modifier.padding(15.dp))
@@ -42,8 +44,12 @@ fun AddNoteScreen() {
                 .fillMaxWidth(),
             shadowElevation = 18.dp
         ) {
-            OutlinedTextField(value = "Note Test", onValueChange = {})
+            if(noteDescription != null) {
+                OutlinedTextField(value = noteDescription , onValueChange = {})
+            }
         }
     }
+
     ButtonValidNote()
+
 }

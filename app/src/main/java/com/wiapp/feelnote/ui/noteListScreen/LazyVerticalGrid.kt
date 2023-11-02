@@ -1,9 +1,11 @@
 package com.wiapp.feelnote.ui.noteListScreen
 
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.items
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import com.wiapp.feelnote.data.allNote
@@ -11,7 +13,7 @@ import com.wiapp.feelnote.navigation.ScreenPath
 
 @Composable
 fun LazyVerticalGrid(navController: NavHostController) {
-    Column {
+    Column(modifier = Modifier.padding(vertical = 38.dp, horizontal = 5.dp)) {
         androidx.compose.foundation.lazy.grid.LazyVerticalGrid(columns = GridCells.Adaptive(150.dp)) {
             items(allNote) {
                     notes -> ItemNote(notes = notes, onElementClick = { noteTitle,noteDescription ->
@@ -19,7 +21,7 @@ fun LazyVerticalGrid(navController: NavHostController) {
             })
             }
         }
-        ButtonAddNote()
+        ButtonAddNote(navController)
     }
 }
 
